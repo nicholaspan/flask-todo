@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <form action="/add" method="post">
+        <input id="todo" name= "todo" type="text">
+        <input id="submit" type="submit">
+    </form>
+<!-- Some JS to disable the submit button if no text in form
+    <script>
+        document.querySelector('#id').onkeyup = function() {
+            if (document.querySelector('#id').value === '') {
+                document.querySelector('#submit').disabled = true;
+            } else {
+                document.querySelector('#submit').disabled = false;
+            }
+        }
+    </script>
+-->
+
+{% endblock %}
